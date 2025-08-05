@@ -2,6 +2,7 @@
   "name": "fakestore-app-template",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://jlymoure25.github.io/fakestoreapp",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

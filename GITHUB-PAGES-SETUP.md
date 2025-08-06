@@ -4,7 +4,7 @@
 
 ### **Step 1: Manual GitHub Pages Setup**
 
-1. **Go to your repository:** https://github.com/Jlymoure25/fakestoreapp
+1. **Go to your repository:** https://github.com/JLymoure25/fakestoreapp
 
 2. **Go to Settings tab** (top of the repository)
 
@@ -51,7 +51,7 @@ If GitHub Actions still fails:
    - Get instant URL!
 
 ### **Expected URLs:**
-- **GitHub Pages:** https://jlymoure25.github.io/fakestoreapp/
+- **GitHub Pages:** https://JLymoure25.github.io/fakestoreapp/
 - **Vercel:** https://fakestoreapp-[random].vercel.app/
 - **Netlify:** https://[random]-fakestoreapp.netlify.app/
 

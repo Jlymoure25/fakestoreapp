@@ -10,7 +10,7 @@
 5. **Save the changes**
 
 ## ✅ Your app will be live at:
-**https://jlymoure25.github.io/fakestoreapp/**
+**https://JLymoure25.github.io/fakestoreapp/**
 
 ## 📋 What's Fixed:
 - ✅ Corrupted ProductListing.tsx file restored

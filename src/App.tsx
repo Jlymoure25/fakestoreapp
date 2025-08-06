@@ -6,7 +6,7 @@ import ProductDetails from './pages/ProductDetails';
 import AppNavbar from './components/Navbar';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fakestoreapp">
       <AppNavbar />
       <Routes>
         <Route path="/" element={<Home />} />

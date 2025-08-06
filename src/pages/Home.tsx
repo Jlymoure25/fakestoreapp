@@ -20,6 +20,7 @@ const Home: React.FC = () => {
                 </Button>
                 <Button 
                   variant="outline-secondary" 
+                  as="a"
                   href="https://github.com/Jlymoure25/fakestoreapp" 
                   target="_blank" 
                   rel="noopener noreferrer"

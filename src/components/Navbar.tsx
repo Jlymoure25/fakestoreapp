@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const AppNavbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [expanded, setExpanded] = useState(false);
 
   const handleNavigation = (path: string) => {
     navigate(path);
+    setExpanded(false); // Close menu after navigation
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
+    <Navbar 
+      bg="dark" 
+      variant="dark" 
+      expand="lg" 
+      className="mb-4"
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+    >
       <Container>
         <Navbar.Brand 
           onClick={() => handleNavigation('/')} 
@@ -20,7 +29,10 @@ const AppNavbar: React.FC = () => {
           🛒 Fake Store
         </Navbar.Brand>
         
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle 
+          aria-controls="basic-navbar-nav" 
+          onClick={() => setExpanded(!expanded)}
+        />
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

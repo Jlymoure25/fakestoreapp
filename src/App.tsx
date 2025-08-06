@@ -1,12 +1,16 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductListing from './pages/ProductListing';
 import ProductDetails from './pages/ProductDetails';
 import AppNavbar from './components/Navbar';
+
 function App() {
+  // Detect if we're on GitHub Pages or other platforms
+  const basename = window.location.hostname.includes('github.io') ? '/fakestoreapp' : '';
+  
   return (
-    <HashRouter>
+    <BrowserRouter basename={basename}>
       <AppNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,7 +21,7 @@ function App() {
         {/* Catch-all route to handle 404s */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

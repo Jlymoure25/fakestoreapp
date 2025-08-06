@@ -8,7 +8,10 @@
     "build": "vite build",
     "serve": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "build:github": "NODE_ENV=production GITHUB_PAGES=true vite build",
+    "build:vercel": "NODE_ENV=production vite build",
+    "build:netlify": "NODE_ENV=production vite build"
   },
   "dependencies": {
     "@types/react": "^19.1.9",

@@ -14,9 +14,19 @@ const Home: React.FC = () => {
               <Card.Text>
                 Discover a wide variety of products at unbeatable prices. Browse our collection and enjoy a seamless shopping experience!
               </Card.Text>
-              <Button variant="primary" size="lg" onClick={() => navigate('/products')}>
-                View Products
-              </Button>
+              <div className="d-grid gap-2">
+                <Button variant="primary" size="lg" onClick={() => navigate('/products')}>
+                  View Products
+                </Button>
+                <Button 
+                  variant="outline-secondary" 
+                  href="https://github.com/Jlymoure25/fakestoreapp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  🔗 View GitHub Repository
+                </Button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
